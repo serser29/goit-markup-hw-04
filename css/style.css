@@ -59,12 +59,21 @@ ul {
 *::before,
 *::after {
   box-sizing: border-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 /**----------------HEADER-------------**/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -94,6 +103,8 @@ ul {
   padding: 24px 0;
   display: inline-block;
   margin-right: 76px;
+  position: relative;
+  color: #404bbf;
 }
 
 .header-top-list {
@@ -111,7 +122,7 @@ ul {
   color: var(--color);
   letter-spacing: 0.02em;
   padding: 24px 0;
-  transition: color 300ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-top-links:hover,
@@ -146,7 +157,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 300ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-cont-mail:hover,
@@ -171,10 +182,16 @@ ul {
   align-items: center;
   display: flex;
   text-align: center;
-  background-image: linear-gradient(), url(../images/people-office\ 1.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: color;
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-content {
@@ -203,6 +220,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero {
