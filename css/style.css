@@ -55,19 +55,6 @@ ul {
   --portfolio: #434455;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
-
 /**----------------HEADER-------------**/
 
 .header {
@@ -84,6 +71,8 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
+  position: relative;
+  color: #404bbf;
 }
 
 .nav-list {
@@ -103,8 +92,6 @@ ul {
   padding: 24px 0;
   display: inline-block;
   margin-right: 76px;
-  position: relative;
-  color: #404bbf;
 }
 
 .header-top-list {
@@ -335,7 +322,7 @@ ul {
 }
 
 .infolist-cont {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .our-info {
