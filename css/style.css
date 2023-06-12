@@ -81,8 +81,6 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
-  position: relative;
-  color: #404bbf;
 }
 
 .nav-list {
@@ -102,6 +100,8 @@ ul {
   padding: 24px 0;
   display: inline-block;
   margin-right: 76px;
+  position: relative;
+  color: #404bbf;
 }
 
 .header-top-list {
