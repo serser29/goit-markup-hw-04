@@ -80,8 +80,11 @@ ul {
 }
 
 .header-logo {
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
   color: var(--web-color);
   text-transform: uppercase;
   padding: 24px 0;
@@ -479,6 +482,7 @@ ul {
 }
 
 .footer-logo {
+  margin-left: 156px;
   margin-right: 120px;
 }
 
