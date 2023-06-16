@@ -493,10 +493,10 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-logo {
+  margin-right: 120px;
 }
 
 .footer-logo-link {
