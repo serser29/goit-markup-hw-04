@@ -594,6 +594,33 @@ ul {
 .portf-list {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.portf-list:hover .cover-icons {
+  transform: translate(0);
+}
+
+.background {
+  position: relative;
+}
+
+.cover-icons {
+  position: absolute;
+  background-color: #4d5ae5;
+  top: 0;
+  left: 0;
+  padding: 40px 32px 164px;
+  text-transform: translateY(100%);
+}
+
+.cover-icons-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  height: 100%;
 }
 
 .cont-apps {
